@@ -8,3 +8,6 @@ EXP 03:-This project demonstrates Image Enhancement using Histogram Equalization
 
 EXP- 04:-IPCV Experiment 04 — Noise Models and Image Restoration using Filters
 This project demonstrates the addition of three types of noise — Gaussian, Salt & Pepper, and Uniform — to a grayscale image, simulating real-world image degradation scenarios. It then applies restoration filters including the Arithmetic Mean Filter, Midpoint Filter, and Alpha-Trimmed Mean Filter to recover image quality from each noise type. Each filter is implemented from scratch using NumPy with sliding-window operations, without relying on built-in smoothing functions. Results are visualized side-by-side using Matplotlib to compare the effectiveness of each filter against its corresponding noise model.
+
+IPCV Experiment 05 — Sobel, Canny & LoG Edge Detection
+This experiment demonstrates classical edge detection techniques in image processing using OpenCV and Python. It applies the Sobel Filter to compute horizontal/vertical gradients and their magnitude, the Canny Edge Detector (with Gaussian pre-smoothing and dual thresholding) for clean, thin edges, and the Laplacian of Gaussian (LoG) filter for second-order edge detection. Gradient magnitude and direction maps are also visualized using HSV colormaps to analyze edge orientation across all three methods.
