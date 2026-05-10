@@ -11,3 +11,6 @@ This project demonstrates the addition of three types of noise — Gaussian, Sal
 
 IPCV Experiment 05 — Sobel, Canny & LoG Edge Detection
 This experiment demonstrates classical edge detection techniques in image processing using OpenCV and Python. It applies the Sobel Filter to compute horizontal/vertical gradients and their magnitude, the Canny Edge Detector (with Gaussian pre-smoothing and dual thresholding) for clean, thin edges, and the Laplacian of Gaussian (LoG) filter for second-order edge detection. Gradient magnitude and direction maps are also visualized using HSV colormaps to analyze edge orientation across all three methods.
+
+IPCV Experiment 06 — CNN-based Image Classification on MNIST
+This experiment builds and compares three CNN architectures (Model 1: 3×Conv2D + MaxPooling, Model 2: 3×Conv2D + AvgPooling with wider dense layers, Model 3: LeNet-5 inspired) trained on the MNIST handwritten digit dataset using TensorFlow/Keras. All three models achieve over 98% test accuracy after 10 epochs, with training/validation accuracy curves plotted for comparison and per-image predictions visualized with color-coded correct/incorrect labels.
