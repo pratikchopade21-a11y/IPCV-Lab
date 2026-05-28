@@ -15,10 +15,22 @@ This experiment demonstrates classical edge detection techniques in image proces
 IPCV Experiment 06 — CNN-based Image Classification on MNIST
 This experiment builds and compares three CNN architectures (Model 1: 3×Conv2D + MaxPooling, Model 2: 3×Conv2D + AvgPooling with wider dense layers, Model 3: LeNet-5 inspired) trained on the MNIST handwritten digit dataset using TensorFlow/Keras. All three models achieve over 98% test accuracy after 10 epochs, with training/validation accuracy curves plotted for comparison and per-image predictions visualized with color-coded correct/incorrect labels.
 
+EXPERIMENT NO. 7 Face Detection and Recognition using OpenCV 
+This project detects and recognizes human faces using OpenCV and Python. It uses computer vision techniques such as Haar Cascade classifiers for face detection and facial recognition algorithms for identifying individuals. The system works on images as well as real-time webcam video streams.
+
+
 IPCV Experiment 08 — Indian License Plate Recognition using CNN
 This experiment implements an end-to-end Indian License Plate Recognition (ANPR) system using OpenCV and a CNN trained on 36 alphanumeric character classes (0–9, A–Z). A Haar Cascade classifier first detects and extracts the license plate region from a car image, followed by contour-based character segmentation with binary thresholding; a 4-layer CNN (757K params, trained with a custom F1-score metric) then classifies each character, achieving a val F1-score > 0.99 in just 22 epochs before early stopping. The final output overlays the recognized plate text (e.g., DL8CAF5030) directly onto the original image.
 
 IPCV Experiment 09 — Brain Tumor Detection using VGG-16 (Transfer Learning)
 This experiment builds a binary brain tumor classifier (Tumor: YES/NO) on Brain MRI scans using Transfer Learning with VGG-16 pretrained weights, with only the top dense layer trained (25K trainable out of 14.7M total params). MRI images are preprocessed via contour-based brain cropping (Gaussian blur + thresholding + extreme-point detection) and resized to 224×224, followed by data augmentation (rotation, flips, brightness shifts) to handle the small dataset (193 train / 50 val / 10 test); the model is trained with early stopping and achieves ~76% val accuracy and ~70% test accuracy. Results are evaluated using confusion matrices and misclassified image visualization.
+
+IPCV Experiment 10 -COVID-19 Detection using VGGNet (VGG16/VGG19)
+This project classifies chest X-ray images as COVID-19 positive or normal using deep learning models VGG16 and VGG19. The model uses transfer learning and image preprocessing techniques for accurate medical image classification. Implemented using Python, TensorFlow/Keras, OpenCV, and CNN architectures for healthcare-based AI applications.
+
+IPCV Experiment 11 -Digital Twin Simulation using MobileNet
+This project implements a Digital Twin Simulation using MobileNet for fault detection in machine parts. Real and synthetic images are processed using OpenCV and TensorFlow to identify defects and classify machine conditions accurately. The system demonstrates deep learning-based predictive maintenance and real-time fault analysis for industrial applications.
+
+
 
 
